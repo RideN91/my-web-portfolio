@@ -1,0 +1,44 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px; /* off-screen initially */
+    height: 10%;
+    width: 100%;
+    background-color: #333;
+    color: #d72424;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .menu.open {
+    left: 0;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    color: #d31919;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 3px;
+    margin: 3px;
+  }
+  
+  li {
+    padding: 15px; /* Increase padding for better spacing */
+    border-right: 1px solid #555;
+    transition: background-color 0.3s ease; /* Add transition effect on hover */
+  }
+  
+  li:hover {
+    background-color: #555; /* Change background color on hover */
+  }
+  
