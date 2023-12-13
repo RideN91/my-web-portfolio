@@ -1,17 +1,18 @@
 .menu {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 0;
-    height: 10%;
     width: 100%;
     background-color: transparent;
-    color: #d72424;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
   }
   
   ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     list-style-type: none;
     padding: 3px;
     margin: 3px;

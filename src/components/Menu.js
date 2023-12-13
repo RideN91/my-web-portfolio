@@ -4,15 +4,14 @@ import '../menu.css';
 const Menu = () => {
     return (
 
-        <nav>
+        <div className='menu'>
             <ul>
                 <li>Home</li>
                 <li>About Me</li>
                 <li>Portfolio</li>
                 <li>Contact</li>
             </ul>
-
-        </nav>
+        </div>
     )
 }
 
