@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../menu.css';
 
 const Menu = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    }
     return (
 
-        <div className={`menu ${isOpen ? 'open' : ''}`}>
-            <button onClick={toggleMenu}>Toggle Menu</button>
-
+        <nav>
             <ul>
                 <li>Home</li>
                 <li>About Me</li>
@@ -19,7 +12,7 @@ const Menu = () => {
                 <li>Contact</li>
             </ul>
 
-        </div>
+        </nav>
     )
 }
 
