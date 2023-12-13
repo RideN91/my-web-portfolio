@@ -1,9 +1,9 @@
 .menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    position: fixed;
+    position: relative;
     width: 100%;
     background-color: transparent;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
@@ -12,7 +12,7 @@
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     padding: 3px;
     margin: 3px;
@@ -20,11 +20,10 @@
   
   li {
     padding: 15px; /* Increase padding for better spacing */
-    border-right: 1px solid #555;
     transition: background-color 0.3s ease; /* Add transition effect on hover */
   }
   
   li:hover {
-    background-color: #555; /* Change background color on hover */
+    background-color: rgb(59, 13, 102); /* Change background color on hover */
   }
   
