@@ -4,7 +4,6 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import Menu from './components/Menu';
 import Projects from './components/Projects';
-import './styles.css';
 
 function App() {
     return (

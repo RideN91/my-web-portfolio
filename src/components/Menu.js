@@ -1,10 +1,10 @@
 import React from 'react';
-import '../menu.css';
+import '../index.css';
 
 const Menu = () => {
     return (
 
-        <div className='menu'>
+        <div className='menu text-7xl text-center text-blue-400'>
             <ul>
                 <li>Home</li>
                 <li>About Me</li>
