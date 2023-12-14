@@ -4,7 +4,7 @@ import '../index.css';
 const Menu = () => {
     return (
 
-        <div className='menu text-7xl text-center text-blue-400'>
+        <div className='bg-gradient-primary'>
             <ul>
                 <li>Home</li>
                 <li>About Me</li>

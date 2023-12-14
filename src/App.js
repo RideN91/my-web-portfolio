@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 
 function App() {
     return (
-        <div className="App">
+        <div className="bg-gradient-primary">
             <Menu />
             <Header />
             <AboutMe />
