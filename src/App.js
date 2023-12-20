@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Portfolio from './components/Portfolio';
 import Home from './components/Home';
 import About from './components/About';
+import NotFound from './components/NotFound';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
         case "/contact":
             component = <Contact />
             break
+            default:
+            component = <NotFound />
     }
 
     return (

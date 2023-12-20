@@ -4,7 +4,7 @@ import React from 'react';
 const Navbar = () => {
     return (
 
-        <div className='nav bg-gradient-primary'>
+        <nav>
             <ul className='sticky top-0 z-[20] mx-auto flex w-full items-end justify-end px-4 py-2 space-x-4'>
                 <li>
                     <a href="/">Home</a>
@@ -19,7 +19,7 @@ const Navbar = () => {
                     <a href="/contact">Contact</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     )
 }
 
