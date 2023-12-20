@@ -13,7 +13,7 @@ function App() {
         case "/":
             component = <Home />
             break
-        case "/aboutme":
+        case "/about-me":
             component = <About />
             break
         case "/portfolio":

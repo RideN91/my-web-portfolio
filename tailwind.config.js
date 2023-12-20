@@ -15,7 +15,7 @@ module.exports = {
           },
         extend: {
             backgroundImage: (theme) => ({
-                'gradient-primary': `linear-gradient(to right, ${theme('colors.pink')}, ${theme('colors.orange')})`,
+                'gradient-primary': `linear-gradient(to right top, ${theme('colors.purple')}, ${theme('colors.green')})`,
             }),
         },
     },

@@ -5,18 +5,18 @@ const Navbar = () => {
     return (
 
         <nav>
-            <ul className='sticky top-0 z-[20] mx-auto flex w-full items-end justify-end px-4 py-2 space-x-4'>
+            <ul className='sticky z-[20] mx-auto flex w-full items-end justify-end px-8 py-2 space-x-4'>
                 <li>
-                    <a href="/">Home</a>
+                    <a className="text-xl" href="/">Home</a>
                 </li>
                 <li>
-                    <a href="/aboutme">About</a>
+                    <a className="text-xl" href="/about-me">About</a>
                 </li>
                 <li>
-                    <a href="/portfolio">Portfolio</a>
+                    <a className="text-xl" href="/portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="/contact">Contact</a>
+                    <a className="text-xl" href="/contact">Contact</a>
                 </li>
             </ul>
         </nav>
