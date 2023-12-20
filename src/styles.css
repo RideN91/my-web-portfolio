@@ -20,7 +20,6 @@ body {
 
 nav {
     display: flex;
-    padding: 2%;
 }
 
 li:hover {

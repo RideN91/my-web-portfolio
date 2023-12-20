@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
 
         <nav>
-            <ul className='sticky z-[20] mx-auto flex w-full items-end justify-end px-8 py-2 space-x-4'>
+            <ul className='sticky z-[20] mx-auto flex w-full items-end justify-end px-6 py-16 space-x-8 md:justify-end sm:justify-center'>
                 <li>
                     <a className="text-xl" href="/">Home</a>
                 </li>
