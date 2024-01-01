@@ -3,9 +3,10 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-
+        <>
         <nav>
             <ul className='sticky z-[20] mx-auto flex w-full items-end justify-end px-6 py-16 space-x-8 md:justify-end sm:justify-center'>
+                <h1 className="text-xl flex-grow">DK</h1>
                 <li>
                     <a className="text-xl" href="/">Home</a>
                 </li>
@@ -20,6 +21,7 @@ const Navbar = () => {
                 </li>
             </ul>
         </nav>
+        </>
     )
 }
 
