@@ -13,8 +13,9 @@ const Navbar = () => {
         <>
             <nav className='mx-auto w-full max-w-[1240px] justify-end px-12 py-12'>
                 <div className="flex-grow">
-                    <a  href="/">
-                        <GiElectric size={28} />
+                    <a  className="flex" href="/">
+                        <GiElectric size={24} />
+                        WEB DEVELOPER
                     </a>
                 </div>
 
@@ -42,18 +43,18 @@ const Navbar = () => {
                 </div>
 
                 <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-                    <ul className="flex-bottom">
+                    <ul className="fixed top-24 left-12 flex-bottom space-y-4 justify-start">
                         <li>
-                            <a className="text-md" href="/">Home</a>
+                            <a className="text-md border-b" href="/">Home</a>
                         </li>
                         <li>
-                            <a className="text-md" href="/about-me">About</a>
+                            <a className="text-md border-b" href="/about-me">About</a>
                         </li>
                         <li>
-                            <a className="text-md" href="/portfolio">Portfolio</a>
+                            <a className="text-md border-b" href="/portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <a className="text-md" href="/contact">Contact</a>
+                            <a className="text-md border-b" href="/contact">Contact</a>
                         </li>
                     </ul>
                 </div>

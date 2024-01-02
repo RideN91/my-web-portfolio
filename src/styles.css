@@ -21,7 +21,3 @@ body {
 nav {
     display: flex;
 }
-
-li:hover {
-    text-decoration: underline;
-}
