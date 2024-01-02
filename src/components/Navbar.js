@@ -43,7 +43,7 @@ const Navbar = () => {
                 </div>
 
                 <div className={`sm:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-                    <ul className="fixed top-24 left-12 h-42 w-64 flex-bottom space-y-4 border-r">
+                    <ul className="fixed top-24 left-0 h-42 w-full flex-bottom space-y-4 shadow-xl bg-gradient-primary">
                         <li className="text-md border-b">
                             <a href="/">Home</a>
                         </li>
