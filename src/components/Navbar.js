@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu, GiElectric } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -36,7 +37,7 @@ const Navbar = () => {
 
                 <div class="block md:hidden">
                     <button onClick={toggleMenu}>
-                        <GiHamburgerMenu size={24} />
+                        {isMenuOpen ? <RxCross2 size={24} /> : <GiHamburgerMenu size={24} /> }
                     </button>
                 </div>
 
