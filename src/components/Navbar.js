@@ -10,24 +10,26 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='mx-auto flex w-full max-w-[1240px] justify-end px-6 py-16 space-x-8 md:justify-end'>
+            <nav className='mx-auto w-full max-w-[1240px] justify-end px-12 py-12'>
                 <div className="flex-grow">
-                    <GiElectric size={32} />
+                    <a  href="/">
+                        <GiElectric size={28} />
+                    </a>
                 </div>
 
                 <div className="hidden md:block"> {/* Ensure this is hidden on small screens */}
-                    <ul className="flex">
+                    <ul className="flex space-x-8">
                         <li>
-                            <a className="text-md text-gray-600 hover:text-gray-800" href="/">Home</a>
+                            <a className="text-md" href="/">Home</a>
                         </li>
                         <li>
-                            <a className="text-md text-gray-600 hover:text-gray-800" href="/about-me">About</a>
+                            <a className="text-md" href="/about-me">About</a>
                         </li>
                         <li>
-                            <a className="text-md text-gray-600 hover:text-gray-800" href="/portfolio">Portfolio</a>
+                            <a className="text-md" href="/portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <a className="text-md text-gray-600 hover:text-gray-800" href="/contact">Contact</a>
+                            <a className="text-md" href="/contact">Contact</a>
                         </li>
                     </ul>
                 </div>
