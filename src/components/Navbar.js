@@ -15,11 +15,11 @@ const Navbar = () => {
                 <div className="flex-grow">
                     <a  className="flex" href="/">
                         <GiElectric size={24} />
-                        WEB DEVELOPER
+                        WEB DEV.
                     </a>
                 </div>
 
-                <div className="hidden md:block"> {/* Ensure this is hidden on small screens */}
+                <div className="hidden sm:block"> {/* Ensure this is hidden on small screens */}
                     <ul className="flex space-x-8">
                         <li>
                             <a className="text-md" href="/">Home</a>
@@ -36,25 +36,25 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <div class="block md:hidden">
+                <div class="block sm:hidden">
                     <button onClick={toggleMenu}>
                         {isMenuOpen ? <RxCross2 size={24} /> : <GiHamburgerMenu size={24} /> }
                     </button>
                 </div>
 
-                <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-                    <ul className="fixed top-24 left-12 flex-bottom space-y-4 justify-start">
-                        <li>
-                            <a className="text-md border-b" href="/">Home</a>
+                <div className={`sm:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+                    <ul className="fixed top-24 left-12 h-42 w-64 flex-bottom space-y-4 border-r">
+                        <li className="text-md border-b">
+                            <a href="/">Home</a>
                         </li>
-                        <li>
-                            <a className="text-md border-b" href="/about-me">About</a>
+                        <li className="text-md border-b">
+                            <a href="/about-me">About</a>
                         </li>
-                        <li>
-                            <a className="text-md border-b" href="/portfolio">Portfolio</a>
+                        <li className="text-md border-b">
+                            <a href="/portfolio">Portfolio</a>
                         </li>
-                        <li>
-                            <a className="text-md border-b" href="/contact">Contact</a>
+                        <li className="text-md border-b">
+                            <a href="/contact">Contact</a>
                         </li>
                     </ul>
                 </div>
