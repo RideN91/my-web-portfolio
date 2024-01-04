@@ -7,7 +7,7 @@ const TypingText = ({ text }) => {
     let index = 0;
     const intervalId = setInterval(() => {
       setVisibleText((prevText) => {
-        if (index < text.length) {
+        if (index <= text.length) {
           index += 1;
           return text.substring(0, index);
         }

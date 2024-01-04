@@ -2,7 +2,7 @@ import React from 'react';
 import TypingText from './TypingText';
 
 const Home = () => {
-    const textOptions = ['Daniel.', 'Front End Developer.'];
+    const textOptions = ['Daniel!', 'Front End Developer!'];
     const [dynamicTextIndex, setDynamicTextIndex] = React.useState(0);
 
     React.useEffect(() => {
@@ -13,7 +13,7 @@ const Home = () => {
         }, 3000);
 
         return () => clearInterval(intervalId);
-    }, [ ]);
+    }, []);
 
     return (
         <div className="container mx-auto px-12 w-full">
