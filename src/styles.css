@@ -18,12 +18,18 @@ body {
     flex-direction: column;
 }
 
-.text-md {
+a.text-md {
+    color:#cac7c7;
+    font-size: 12px;
+    font-weight: 900;
     letter-spacing: 2px;
+    padding-bottom: 10px;
 }
 
 #typing-text {
-    text-shadow: 4px 4px 8px rgb(69, 68, 68);
+    text-shadow: 1px 1px 1px #fff,
+                 2px 2px 2px #070707,
+                 4px 4px 4px #616060;
 }
 
 nav {

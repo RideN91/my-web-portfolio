@@ -1,5 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 
 const Home = () => {
     const textOptions = ['<Daniel>!', '<Front End Developer>!'];
@@ -18,6 +19,7 @@ const Home = () => {
     return (
         <>
             <div className="max-w-[800px] w-full h-screen flex">
+
                 <div className="static absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                     <img
                         src="./Face.png"
@@ -28,13 +30,13 @@ const Home = () => {
                 </div>
 
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold"
-                     id="typing-text"
-                    >
+                    id="typing-text"
+                >
                     <TypeAnimation
                         sequence={[
-                            'Hello, My name is Daniel!',
+                            'Hello, My Name is Daniel!',
                             1000,
-                            'I am a front-end developer.',
+                            'I am a Front-End Developer.',
                             1000,
                         ]}
                         speed={50}
@@ -42,7 +44,15 @@ const Home = () => {
                         repeat={Infinity}
                     />
                 </div>
+
+                <div className="fixed ml-60 top-1/2 transform -translate-x-1/2">
+                    <RxLinkedinLogo size={36} />
+                    <RxGithubLogo size={36} />
+                </div>
+
             </div>
+
+
         </>
     );
 }
