@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross2, RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
         <>
             <nav className='mx-auto w-full max-w-[1240px] justify-end px-12 py-12'>
                 <div className="flex-grow">
-                    <img className="h-12 w-18"src="./RideN4.png" alt="Logo" />
+                    <a href="/"><img className="h-14 w-18"src="./RideN-white.png" alt="Logo"/></a>
                 </div>
 
                 <div className="hidden sm:block"> {/* Ensure this is hidden on small screens */}

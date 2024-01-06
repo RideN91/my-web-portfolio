@@ -20,7 +20,7 @@ const Home = () => {
         <>
             <div className="max-w-[800px] w-full h-screen flex">
 
-                <div className="static absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div className="static absolute top-1/2 left-72 transform -translate-y-1/2">
                     <img
                         src="./Face.png"
                         alt="Me"
@@ -29,7 +29,7 @@ const Home = () => {
                     />
                 </div>
 
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold"
+                <div className="absolute top-1/2 left-2/4 transform -translate-y-1/2 font-bold"
                     id="typing-text"
                 >
                     <TypeAnimation
@@ -46,8 +46,13 @@ const Home = () => {
                 </div>
 
                 <div className="fixed ml-60 top-1/2 transform -translate-x-1/2">
-                    <RxLinkedinLogo size={36} />
-                    <RxGithubLogo size={36} />
+                    <a href="https://www.linkedin.com/in/daniel-kovalovsk%C3%BD-5b07a4219/" target="_blank" rel="noopener noreferrer">
+                        <RxLinkedinLogo size={36} className="mb-[4px]" />
+                    </a>
+                    
+                    <a href="https://github.com/RideN91" target="_blank" rel="noopener noreferrer">
+                        <RxGithubLogo size={36} />
+                    </a>
                 </div>
 
             </div>
