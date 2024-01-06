@@ -1,12 +1,13 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import { SiHtml5, SiCss3, SiJavascript, SiReact, SiBootstrap, SiTailwindcss } from "react-icons/si";
 
 const Home = () => {
 
     return (
         <>
-            <div className="max-w-[800px] w-full h-screen flex">
+            <div className="max-w-[800px] h-screen flex">
 
                 <div className="static absolute top-1/2 left-72 transform -translate-y-1/2">
                     <img
@@ -17,7 +18,7 @@ const Home = () => {
                     />
                 </div>
 
-                <div className="absolute top-1/2 left-2/4 transform -translate-y-1/2 font-bold"
+                <div className="absolute top-1/2 left-2/4 font-bold"
                     id="typing-text"
                 >
                     <TypeAnimation
@@ -43,6 +44,18 @@ const Home = () => {
                     </a>
                 </div>
 
+                <div className="absolute top-1/2 left-2/4 mt-12 font-bold">
+                    <h1>My tech stack includes the following technologies:</h1>    
+                </div>       
+
+                <div className="absolute top-1/2 left-2/4 mt-32 flex">
+                    <SiHtml5 size={36} />
+                    <SiCss3 size={36} />
+                    <SiJavascript size={36} />
+                    <SiReact size={36} />
+                    <SiBootstrap size={36} />
+                    <SiTailwindcss size={36} />
+                </div>            
             </div>
         </>
     );
