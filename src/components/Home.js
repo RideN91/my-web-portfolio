@@ -27,6 +27,8 @@ const Home = () => {
                             1000,
                             'I am a Front-End Developer.',
                             1000,
+                            'Explore My Portfolio!',
+                            1000,
                         ]}
                         speed={50}
                         style={{ fontSize: '2em' }}
@@ -36,25 +38,25 @@ const Home = () => {
 
                 <div className="fixed ml-60 top-1/2 transform -translate-x-1/2">
                     <a href="https://www.linkedin.com/in/daniel-kovalovsk%C3%BD-5b07a4219/" target="_blank" rel="noopener noreferrer">
-                        <RxLinkedinLogo size={36} className="mb-[4px]" />
+                        <RxLinkedinLogo size={36} className="mb-[4px] transition-transform transform hover:scale-110" />
                     </a>
 
                     <a href="https://github.com/RideN91" target="_blank" rel="noopener noreferrer">
-                        <RxGithubLogo size={36} />
+                        <RxGithubLogo size={36} className='transition-transform transform hover:scale-110' />
                     </a>
                 </div>
 
-                <div className="absolute top-1/2 left-2/4 mt-12 font-bold">
+                <div className="absolute top-1/2 left-2/4 mt-14 font-bold">
                     <h1>My tech stack includes the following technologies:</h1>    
                 </div>       
 
-                <div className="absolute top-1/2 left-2/4 mt-32 flex">
-                    <SiHtml5 size={36} />
-                    <SiCss3 size={36} />
-                    <SiJavascript size={36} />
-                    <SiReact size={36} />
-                    <SiBootstrap size={36} />
-                    <SiTailwindcss size={36} />
+                <div className="absolute top-1/2 left-2/4 mt-24 flex">
+                    <SiHtml5 size={36} className="mr-5 transition-transform transform hover:scale-110" title="HTML"/>
+                    <SiCss3 size={36} className="mr-5 transition-transform transform hover:scale-110" title="CSS"/>
+                    <SiJavascript size={36} className="mr-5 transition-transform transform hover:scale-110" title="JS"/>
+                    <SiReact size={36} className="mr-5 transition-transform transform hover:scale-110" title="React"/>
+                    <SiBootstrap size={36} className="mr-5 transition-transform transform hover:scale-110" title="Bootstrap"/>
+                    <SiTailwindcss size={36} className="mr-5 transition-transform transform hover:scale-110" title="Tailwind"/>
                 </div>            
             </div>
         </>
