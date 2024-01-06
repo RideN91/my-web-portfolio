@@ -3,18 +3,6 @@ import { TypeAnimation } from 'react-type-animation';
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 
 const Home = () => {
-    const textOptions = ['<Daniel>!', '<Front End Developer>!'];
-    const [dynamicTextIndex, setDynamicTextIndex] = React.useState(0);
-
-    React.useEffect(() => {
-        const intervalId = setInterval(() => {
-            setDynamicTextIndex((prevIndex) =>
-                prevIndex === textOptions.length - 1 ? 0 : prevIndex + 1
-            );
-        }, 3000);
-
-        return () => clearInterval(intervalId);
-    }, []);
 
     return (
         <>
@@ -49,15 +37,13 @@ const Home = () => {
                     <a href="https://www.linkedin.com/in/daniel-kovalovsk%C3%BD-5b07a4219/" target="_blank" rel="noopener noreferrer">
                         <RxLinkedinLogo size={36} className="mb-[4px]" />
                     </a>
-                    
+
                     <a href="https://github.com/RideN91" target="_blank" rel="noopener noreferrer">
                         <RxGithubLogo size={36} />
                     </a>
                 </div>
 
             </div>
-
-
         </>
     );
 }
