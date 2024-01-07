@@ -36,9 +36,9 @@ const Home = () => {
                     />
                 </div>
 
-                <div className="fixed ml-60 top-1/2 transform -translate-x-1/2">
+                <div className="flex absolute bottom-0 left-1/2 mb-12">
                     <a href="https://www.linkedin.com/in/daniel-kovalovsk%C3%BD-5b07a4219/" target="_blank" rel="noopener noreferrer">
-                        <RxLinkedinLogo size={36} className="mb-[4px] transition-transform transform hover:scale-110" />
+                        <RxLinkedinLogo size={36} className="mb-[4px] mr-3 transition-transform transform hover:scale-110" />
                     </a>
 
                     <a href="https://github.com/RideN91" target="_blank" rel="noopener noreferrer">

@@ -11,7 +11,8 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='mx-auto w-full max-w-[1240px] justify-end px-12 py-12'>
+            <nav className='flex mx-auto w-full max-w-[1240px] justify-end px-12 py-12'>
+                
                 <div className="flex-grow">
                     <a href="/"><img className="h-14 w-18 transition-transform transform hover:scale-110"src="./RideN-white.png" alt="Logo"/></a>
                 </div>
