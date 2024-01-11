@@ -29,5 +29,6 @@ a.text-md {
 #typing-text {
     text-shadow: 1px 1px 1px #fff;
     font-family: 'Montserrat', sans-serif;
+    font-style:bold;
 }
 
