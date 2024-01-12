@@ -7,29 +7,28 @@ const Home = () => {
 
     return (
         <>
-            <div className="flex max-w-[800px]">
+            <div className="flex mx-auto max-w-[800px]">
 
                 {/*animated typing*/}
-                    <div className="sm:fixed mx-auto"
-                        id="typing-text"
-                    >
-                        <TypeAnimation
-                            sequence={[
-                                'Hello, My Name is Daniel!',
-                                1200,
-                                'I am a Front-End Developer.',
-                                1200,
-                                'Explore My Portfolio!',
-                                1200,
-                            ]}
-                            speed={50}
-                            style={{ fontSize: '2em' }}
-                            repeat={Infinity}
-                        />
-                    </div>
+                <div className="fixed justify-center top-1/2 left-1/3 sm:bottom-1 z-10" id="typing-text">
+                    <TypeAnimation
+                        className=''
+                        sequence={[
+                            'Hello, My Name is Daniel!',
+                            1200,
+                            'I am a Front-End Developer.',
+                            1200,
+                            'Explore My Portfolio!',
+                            1200,
+                        ]}
+                        speed={50}
+                        style={{ fontSize: '2em' }}
+                        repeat={Infinity}
+                    />
+                </div>
 
                 {/*picture*/}
-                <div className="">
+                <div className="absolute center lg:right-1/3 md:right-1/3">
                     <img
                         src="./Face.png"
                         alt="Me"

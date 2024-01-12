@@ -13,11 +13,11 @@ const Navbar = () => {
         <>
             <nav className='flex mx-auto w-full max-w-[1240px] justify-end px-12 py-12'>
                 
-                <div className="flex-grow">
+                <div className="flex-grow self-center">
                     <a href="/"><img className="h-14 w-18 transition-transform transform hover:scale-110"src="./RideN-white.png" alt="Logo"/></a>
                 </div>
 
-                <div className="hidden sm:block"> {/* Ensure this is hidden on small screens */}
+                <div className="hidden sm:block self-center"> {/* Ensure this is hidden on small screens */}
                     <ul className="flex space-x-8">
                         <li>
                             <a className="text-md" href="/">Home</a>
@@ -34,9 +34,9 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <div class="block sm:hidden">
+                <div class="flex sm:hidden">
                     <button onClick={toggleMenu}>
-                        {isMenuOpen ? <RxCross2 size={24} /> : <GiHamburgerMenu size={24} /> }
+                        {isMenuOpen ? <RxCross2 size={24} /> : <GiHamburgerMenu size={24} className="self-center" /> }
                     </button>
                 </div>
 
