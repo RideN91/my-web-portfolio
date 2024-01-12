@@ -47,7 +47,7 @@ const Home = () => {
                 </div>
             </div>
             {/*in&GitHub logos*/}
-            <div className="flex items-center justify-center mt-24">
+            <div className="animated-box in flex mx-auto max-w-[960px] items-center justify-center mt-24 z-20">
                     <a href="https://www.linkedin.com/in/daniel-kovalovsk%C3%BD-5b07a4219/" target="_blank" rel="noopener noreferrer">
                         <RxLinkedinLogo size={36} className="mb-[4px] mr-3 transition-transform transform hover:scale-110" />
                     </a>
