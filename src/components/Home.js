@@ -7,10 +7,10 @@ const Home = () => {
 
     return (
         <>
-            <div className="flex mx-auto max-w-[800px]">
+            <div className="flex mx-auto max-w-[800px] mt-32">
 
                 {/*animated typing*/}
-                <div className="fixed justify-center top-1/2 left-1/3 sm:bottom-1 z-10" id="typing-text">
+                <div className="absolute lg:mt-64 lg:ml-56 md:mt-52 md:ml-36 z-10" id="typing-text">
                     <TypeAnimation
                         className=''
                         sequence={[
@@ -25,10 +25,21 @@ const Home = () => {
                         style={{ fontSize: '2em' }}
                         repeat={Infinity}
                     />
+                    {/*tech stack description*/}
+                    <h1>My tech stack includes the following technologies:</h1>
+                    {/*tech stack logos*/}
+                    <div className="flex mt-2">
+                        <SiHtml5 size={36} className="mr-5 transition-transform transform hover:scale-110" title="HTML" />
+                        <SiCss3 size={36} className="mr-5 transition-transform transform hover:scale-110" title="CSS" />
+                        <SiJavascript size={36} className="mr-5 transition-transform transform hover:scale-110" title="JS" />
+                        <SiReact size={36} className="mr-5 transition-transform transform hover:scale-110" title="React" />
+                        <SiBootstrap size={36} className="mr-5 transition-transform transform hover:scale-110" title="Bootstrap" />
+                        <SiTailwindcss size={36} className="mr-5 transition-transform transform hover:scale-110" title="Tailwind" />
+                    </div>
                 </div>
 
                 {/*picture*/}
-                <div className="absolute center lg:right-1/3 md:right-1/3">
+                <div className="absolute center lg:right-1/3 md:right-1/3 mt-12">
                     <img
                         src="./Face.png"
                         alt="Me"
@@ -37,20 +48,7 @@ const Home = () => {
                     />
                 </div>
 
-                {/*description*/}
-                <div className="">
-                    <h1>My tech stack includes the following technologies:</h1>
-                </div>
-
-                {/*tech stack logos*/}
-                <div className="">
-                    <SiHtml5 size={36} className="mr-5 transition-transform transform hover:scale-110" title="HTML" />
-                    <SiCss3 size={36} className="mr-5 transition-transform transform hover:scale-110" title="CSS" />
-                    <SiJavascript size={36} className="mr-5 transition-transform transform hover:scale-110" title="JS" />
-                    <SiReact size={36} className="mr-5 transition-transform transform hover:scale-110" title="React" />
-                    <SiBootstrap size={36} className="mr-5 transition-transform transform hover:scale-110" title="Bootstrap" />
-                    <SiTailwindcss size={36} className="mr-5 transition-transform transform hover:scale-110" title="Tailwind" />
-                </div>
+                
 
                 {/*in&GitHub logos*/}
                 <div className="">
