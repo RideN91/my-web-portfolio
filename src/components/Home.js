@@ -45,8 +45,9 @@ const Home = () => {
                         <SiTailwindcss size={36} className="mr-5 transition-transform transform hover:scale-110" title="Tailwind" />
                     </div>
                 </div>
-                {/*in&GitHub logos*/}
-                <div className="flex mt-2">
+            </div>
+            {/*in&GitHub logos*/}
+            <div className="flex items-center justify-center mt-24">
                     <a href="https://www.linkedin.com/in/daniel-kovalovsk%C3%BD-5b07a4219/" target="_blank" rel="noopener noreferrer">
                         <RxLinkedinLogo size={36} className="mb-[4px] mr-3 transition-transform transform hover:scale-110" />
                     </a>
@@ -54,7 +55,6 @@ const Home = () => {
                         <RxGithubLogo size={36} className='transition-transform transform hover:scale-110' />
                     </a>
                 </div>
-            </div>
         </>
     );
 }
