@@ -7,9 +7,9 @@ const Home = () => {
 
     return (
         <>
-            <div className="flex mx-auto max-w-[960px] center">
+            <div className="flex mx-auto max-w-[960px] h-full center">
                 {/*picture*/}
-                <div className="relative lg:mr-96 lg:mt-24">
+                <div className="relative lg:mr-96 lg:mt-20 lg:w-full md:mr-72 md:mt-16 md:w-96 sm:w-64">
                     <img
                         src="./Face.png"
                         alt="Me"
@@ -18,7 +18,7 @@ const Home = () => {
                     />
                 </div>
                 {/*animated typing*/}
-                <div className="absolute center lg:mt-52 lg:ml-96 md:mt-54 md:ml-36 z-10" id="typing-text">
+                <div className="absolute lg:mt-52 lg:ml-96 md:mt-32 md:ml-72 z-10" id="typing-text">
                     <TypeAnimation
                         className=''
                         sequence={[
@@ -34,7 +34,7 @@ const Home = () => {
                         repeat={Infinity}
                     />
                     {/*tech stack description*/}
-                    <h1>My tech stack includes the following technologies:</h1>
+                    <h1 className="md:text-2xl]">My tech stack includes the following technologies:</h1>
                     {/*tech stack logos*/}
                     <div className="flex mt-2">
                         <SiHtml5 size={36} className="mr-5 transition-transform transform hover:scale-110" title="HTML" />
@@ -44,24 +44,16 @@ const Home = () => {
                         <SiBootstrap size={36} className="mr-5 transition-transform transform hover:scale-110" title="Bootstrap" />
                         <SiTailwindcss size={36} className="mr-5 transition-transform transform hover:scale-110" title="Tailwind" />
                     </div>
-                    {/*in&GitHub logos*/}
-                    <div className="flex mt-2">
-                        <a href="https://www.linkedin.com/in/daniel-kovalovsk%C3%BD-5b07a4219/" target="_blank" rel="noopener noreferrer">
-                            <RxLinkedinLogo size={36} className="mb-[4px] mr-3 transition-transform transform hover:scale-110" />
-                        </a>
-                        <a href="https://github.com/RideN91" target="_blank" rel="noopener noreferrer">
-                            <RxGithubLogo size={36} className='transition-transform transform hover:scale-110' />
-                        </a>
-                    </div>
                 </div>
-                {/* <div className="static center lg:mr-1/3 md:right-1/3">
-                    <img
-                        src="./Face.png"
-                        alt="Me"
-                        className="opacity-75"
-                        style={{ clipPath: 'circle(50% at 50% 50%)' }}
-                    />
-                </div> */}
+                {/*in&GitHub logos*/}
+                <div className="flex mt-2">
+                    <a href="https://www.linkedin.com/in/daniel-kovalovsk%C3%BD-5b07a4219/" target="_blank" rel="noopener noreferrer">
+                        <RxLinkedinLogo size={36} className="mb-[4px] mr-3 transition-transform transform hover:scale-110" />
+                    </a>
+                    <a href="https://github.com/RideN91" target="_blank" rel="noopener noreferrer">
+                        <RxGithubLogo size={36} className='transition-transform transform hover:scale-110' />
+                    </a>
+                </div>
             </div>
         </>
     );
