@@ -9,7 +9,7 @@ const Home = () => {
         <>
             <div className="flex mx-auto max-w-[960px] h-full center">
                 {/*picture*/}
-                <div className="relative lg:mr-96 lg:mt-20 lg:w-full md:mr-72 md:mt-16 md:w-96 sm:w-64">
+                <div className="relative lg:mr-96 lg:mt-20 lg:w-full md:mr-72 md:mt-20 md:w-96 sm:w-64">
                     <img
                         src="./Face.png"
                         alt="Me"
